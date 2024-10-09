@@ -1,0 +1,214 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+    background-color: rgb(246, 246, 246);
+}
+
+
+.border{
+    border: 1px solid green;
+}
+
+.flex{
+    display: flex;
+}
+
+.margin{
+    margin: 8px;
+}
+.ajout-container{
+    margin: 50px;
+    border: 1.5px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: white;
+}
+.ligne {
+    width: 100%; 
+    height: 1px;
+    background-color: rgb(221, 221, 221);
+}
+.ajout-container-body{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.box-infos{
+    width: 80%;
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: 0 0 5px rgba(101, 101, 101, 0.5); 
+    border-top: 3px solid rgb(1, 1, 102);
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.client-infos{
+    margin: 20px;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.input {
+    width: 30%;
+    padding: 12px 15px; 
+    border: 1.5px solid #c6c6c6;
+    border-radius: 5px; 
+    font-size: 16px; 
+    color: #333;
+    background-color: #f8f9fa;
+    border-color:border-color 0.3s, box-shadow 0.3s; 
+}
+
+.input:focus {
+    border-color: rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    outline: none; 
+}
+
+.input:hover {
+    border-color: rgba(0, 123, 255, 0.5);
+}
+
+.input::placeholder {
+    color: #ababab; 
+    font-size: 14px;
+}
+
+.select-input{
+    width: 200px;
+}
+
+.adresse-infos{
+    margin: 20px;
+    flex-direction: row;
+    gap: 15px;
+}
+.button-box{
+    width: 80%;
+    justify-content: space-between;
+}
+.restart{
+    width: 30px;
+    transition: scale 0.2s;
+    position: fixed;
+    right: 1%; 
+    bottom: 3%; 
+}
+.restart:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.annuler{
+    width: 30px;
+    transition: scale 0.2s;
+    position: fixed;
+    right: 1%; 
+    bottom: 8%; 
+}
+.annuler:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.ajouter{
+    width: 30px;
+    transition: scale 0.2s;
+    position: fixed;
+    right: 1%; 
+    bottom: 13%;  
+}
+.ajouter:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.list{
+    width: 30px;
+    transition: scale 0.2s;
+    position: fixed;
+    right: 1%; 
+    bottom: 18%;  
+}
+.list:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.load{
+    width: 30px;
+    transition: scale 0.2s;
+    position: fixed;
+    right: 1%; 
+    bottom: 23%;  
+}
+.load:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+@media (max-width: 850px){
+    .client-infos{
+        margin: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .input {
+        width: 90%;
+        padding: 12px 15px; 
+        border: 1.5px solid #c6c6c6;
+        border-radius: 5px; 
+        font-size: 16px; 
+        color: #333;
+        background-color: #f8f9fa; 
+        transition: border-color 0.3s, box-shadow 0.3s; 
+    }
+    .select-input{
+        width: 96%;
+    }
+    .adresse-infos{
+        margin: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .button-box{
+        width: 80%;
+        justify-content: space-between;
+    }
+    .restart{
+        width: 30px;
+        transition: scale 0.2s;
+        position: fixed;
+        right: 2%; 
+        bottom: 3%;  
+    }
+    .annuler{
+        width: 30px;
+        transition: scale 0.2s;
+        position: fixed;
+        right: 2%; 
+        bottom: 8%; 
+    }
+    .ajouter{
+        width: 30px;
+        transition: scale 0.2s;
+        position: fixed;
+        right: 2%; 
+        bottom: 13%;  
+    }
+    .list{
+        width: 30px;
+        transition: scale 0.2s;
+        position: fixed;
+        right: 2%; 
+        bottom: 18%;  
+    }
+    .load{
+        width: 30px;
+        transition: scale 0.2s;
+        position: fixed;
+        right: 2%; 
+        bottom: 23%;  
+    }
+    
+}
